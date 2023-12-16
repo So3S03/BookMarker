@@ -1,0 +1,121 @@
+body {
+    background-color: #f7ecde;
+    z-index: 999;
+}
+
+::selection {
+    background-color: #fec260;
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #fec260;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+h1:hover .layer {
+    height: 65%;
+}
+
+.border-doted {
+    border-bottom-style: dotted !important;
+    border-top-style: dotted !important;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Righteous", cursive;
+    font-size: 28px;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.special-btn {
+    background-color: #d1512d;
+    border-color: #a03315;
+}
+
+.special-btn:hover {
+    background-color: #bb4120;
+}
+
+.special-btn2 {
+    background-color: #9eb23b;
+    color: #fff;
+    border-color: #6e8018;
+}
+
+.special-btn2:hover {
+    background-color: #8a9e23;
+    color: #fff;
+}
+
+
+
+
+.normal-style:focus {
+    border-color: #fec260;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+    ;
+}
+
+.not-valid:focus {
+    border-color: #b02a37;
+    box-shadow: 0 0 0 0.25rem #dc354644;
+}
+
+.valid:focus:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, .25);
+}
+
+.icon-group {
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.checked {
+    color: #3ca55c;
+}
+
+.wrong {
+    color: #b02a37;
+}
+
+.shape {
+    display: block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.bg-green {
+    background-color: #3ca55c;
+}
+
+.layer-5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(#00000069, #00000069);
+}
