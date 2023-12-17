@@ -44,7 +44,7 @@ function showData() {
     showingData.innerHTML = temp
 }
 function goToWebsite(i) {
-    if (dataArr[i].bookUrl.startsWith("https://")) {
+    if (dataArr[i].bookUrl.startsWith("https://") || dataArr[i].bookUrl.startsWith("http://")) {
         window.open(dataArr[i].bookUrl)
     } else {
         window.open(`https://${dataArr[i].bookUrl}`)
