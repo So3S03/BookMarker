@@ -22,11 +22,17 @@ document.querySelector("#subBtn").addEventListener("click", () => {
         document.querySelector(".modal.fade").classList.add("d-block")
         document.querySelector(".modal.fade").classList.add("show")
     }
-    document.querySelector(".btn-close").addEventListener("click", () => {
-        document.querySelector(".modal.fade").classList.remove("d-block")
-        document.querySelector(".modal.fade").classList.remove("show")
+    document.querySelector(".btn-close").addEventListener("click", btnClose)
+    document.addEventListener("click", (e) => {
+        if (e.target.id == "closeLayer") {
+            btnClose()
+        }
     })
 })
+function btnClose() {
+    document.querySelector(".modal.fade").classList.remove("d-block")
+    document.querySelector(".modal.fade").classList.remove("show")
+}
 function showData() {
     let temp = "";
     for (let i = 0; i < dataArr.length; i++) {
